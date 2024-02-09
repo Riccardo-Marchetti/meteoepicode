@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MyNavbar from "./components/MyNavbar";
+import MyFooter from "./components/MyFooter";
+import Homepage from "./components/HomePage";
+
+import DetailsMeteo from "./components/DetailsMeteo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <BrowserRouter>
+      <header>
+        <MyNavbar />
       </header>
-    </div>
+      <main>
+        <Routes>
+          <Route element={<Homepage />} path="/" />
+          <Route path="/meteo-details/:meteoId" element={<DetailsMeteo />} />
+        </Routes>
+      </main>
+      <footer>
+        <MyFooter />
+      </footer>
+    </BrowserRouter>
   );
 }
 

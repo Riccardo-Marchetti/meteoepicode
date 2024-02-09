@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+html,
+body,
+main {
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  background-color: #e4f1fe;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  background-color: #22313f !important;
 }
-
-.App-link {
-  color: #61dafb;
+footer {
+  background-color: #22313f;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p {
+  color: white !important;
+  font-size: 18px;
+}
+.nav-link {
+  font-size: 20px !important;
+}
+.li {
+  margin-top: 30px;
+  background-color: #22313f !important;
+  font-size: 18px;
+  color: white !important;
+}
+.logo-meteo {
+  width: 70px !important;
+  margin-left: 20px;
+}
+.search {
+  background-color: #22313f !important;
+}
+.card {
+  height: 100% !important;
+  background-color: rgb(168, 213, 235) !important;
+}
+.card-home {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgb(152, 211, 238) !important;
+}
+.button-search {
+  background-color: #0dcf82 !important;
+  border: none !important;
+}
+.car {
+  width: 100%;
 }

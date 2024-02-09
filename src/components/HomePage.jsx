@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Alert } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   const [city, setCity] = useState("");
   const [meteo, setMeteo] = useState(null);
+  const [isError, setisError] = useState(false);
 
   const fetchMeteo = (e) => {
     e.preventDefault();
@@ -30,6 +31,7 @@ const Homepage = () => {
       })
       .catch((err) => {
         console.log(err);
+        setisError(true);
       });
   };
 
@@ -62,6 +64,15 @@ const Homepage = () => {
       <div className="text-center mt-3">
         <h1 className="text-white  fw-bold ">Meteo</h1>
       </div>
+      {isError && (
+        <Row className=" justify-content-center mt-4 ">
+          <Col xs={6}>
+            <Alert variant="danger" className="text-center">
+              Impossibile caricare il contenuto{" "}
+            </Alert>
+          </Col>
+        </Row>
+      )}
       {meteo && (
         <Row className="justify-content-center car">
           <Col xs={11} lg={8}>

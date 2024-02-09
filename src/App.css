@@ -5,6 +5,8 @@ main {
 }
 main {
   background-color: #e4f1fe;
+
+  overflow: auto;
 }
 #root {
   height: 100%;
@@ -50,4 +52,9 @@ footer p {
 }
 .car {
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .form {
+    width: 120px;
+  }
 }

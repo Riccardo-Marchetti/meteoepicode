@@ -71,7 +71,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} lg={6} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} lg={6} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">Vento</Card.Title>
@@ -85,7 +85,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">Umidità</Card.Title>
@@ -96,7 +96,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">
@@ -109,7 +109,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">
@@ -122,7 +122,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">Nuvole</Card.Title>
@@ -133,7 +133,7 @@ const DetailsMeteo = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={6} sm={6} md={4} xl={3} xxl={2} className="mb-3">
+              <Col xs={12} sm={6} md={4} xl={3} xxl={2} className="mb-3">
                 <Card className="card">
                   <Card.Body>
                     <Card.Title className="text-white fs-3">

@@ -40,7 +40,7 @@ const Homepage = () => {
       <div className="search ">
         <Row className=" pb-4 w-100">
           <Col className="d-flex flex-row justify-content-center p-0">
-            <Form onSubmit={fetchMeteo}>
+            <Form onSubmit={fetchMeteo} className="form">
               <Row>
                 <Col xs="auto" className="text-white-50">
                   <Form.Control
@@ -52,7 +52,7 @@ const Homepage = () => {
                   />
                 </Col>
                 <Col xs="auto">
-                  <Button className="button-search" type="submit">
+                  <Button className="button-search mt-3" type="submit">
                     Search
                   </Button>
                 </Col>

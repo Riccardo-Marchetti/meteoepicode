@@ -53,8 +53,8 @@ footer p {
 .car {
   width: 100%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 350px) {
   .form {
-    width: 120px;
+    width: 130px;
   }
 }

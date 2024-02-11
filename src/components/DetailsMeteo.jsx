@@ -39,15 +39,14 @@ const DetailsMeteo = () => {
       {meteo && (
         <>
           <div className="text-center pt-3">
-            <h1 className="mt-0 text-white fw-bold  ">{meteo.name}</h1>
-            <h2 className="text-white">{meteo.main.temp}°</h2>
-            <p className="mb-1 text-white fs-4">
-              {meteo.weather[0].description}
-            </p>
-            <p className="text-white fs-4">
-              Temperature: MAX: {meteo.main.temp_max}° - MIN:{" "}
-              {meteo.main.temp_min}°
-            </p>
+            <h1 className="mt-0 text-white fw-bold  ">{meteo.name} </h1>
+            <h2 className="text-white">
+              {meteo.main.temp}° - {meteo.weather[0].description}
+              <img
+                src={`https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`}
+                alt="icon-meteo"
+              />
+            </h2>
           </div>
           <Container>
             <Row>

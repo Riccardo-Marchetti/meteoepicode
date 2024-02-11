@@ -52,7 +52,7 @@ const Homepage = () => {
                   />
                 </Col>
                 <Col xs="auto">
-                  <Button className="button-search mt-3" type="submit">
+                  <Button className="button-search " type="submit">
                     Search
                   </Button>
                 </Col>
@@ -89,6 +89,10 @@ const Homepage = () => {
                   <div className="d-flex flex-row justify-content-between ">
                     <Card.Text className="text-white fs-6 mt-2 ">
                       • {meteo.list[0].weather[0].description}
+                      <img
+                        src={`https://openweathermap.org/img/wn/${meteo.list[0].weather[0].icon}@2x.png`}
+                        alt="icon-meteo"
+                      />
                     </Card.Text>
                     <Card.Text className="text-white fs-6 ">
                       • Temperatura attuale: {meteo.list[0].main.temp}°
